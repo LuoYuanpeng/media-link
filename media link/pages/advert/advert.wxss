@@ -1,0 +1,41 @@
+/* pages/advert/advert.wxss */
+.advert_list {
+  width: 100%;
+}
+.advert_item {
+  width: 90%;
+  margin:0 auto;
+  padding: 20rpx 0;
+  border-bottom: 1px dashed #bfbfbf;
+}
+.infoName_and_time {
+  height: 50rpx;
+}
+.info_name {
+  font-family: PingFang-SC-Bold;
+  display: block;
+  float: left;
+  width: 70%;
+  font-size: 28rpx;
+  font-weight: 600; 
+  line-height: 50rpx;
+}
+.time {
+  display: block;
+  float: right;
+  width: 30%;
+  text-align: right;
+  font-size: 20rpx;
+  line-height: 50rpx;
+}
+.mvp_add {
+  padding-top: 5rpx;
+  font-size: 28rpx;
+  color: #D0021B;
+}
+.address {
+  padding-top: 16rpx;
+  font-size: 20rpx;
+  color: #acacac;
+  letter-spacing: 4rpx;
+}

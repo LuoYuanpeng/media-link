@@ -1,0 +1,138 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='banner'>
+       <image class='index_bg' src='/images/home_bg@2x.png'></image> 
+    </view>
+    <view class='content'>
+      <!--nav-->
+      <view class='content_nav'>
+          <view class='integrate'>
+            <text class='integrate_title'>积分额</text>
+            <text class='integrate_num'>123123</text>
+          </view>
+          <view class='user_num'>
+            <text class='user_title'>开通media link人数</text>
+            <view class='num_box'>
+              <image class='user_icon' src='/images/user_num.png'></image>
+              <text class='user_text'>13524649</text>
+            </view>
+          </view>
+      </view>
+      <!--main-->
+      <view class='main_wrapper'>
+        <view class='main_title'>
+          <view class='info_wrapper'>
+            <image class='info_icon' src='/images/info.png'></image>
+          </view>
+          <view class='info_content'>
+            <view class='info_content-wrapper'>
+              <text>新店开张，大酬宾，希望客户能够在本店享受到令人愉悦的服务</text>
+            </view>
+          </view>
+        </view>
+        <scroll-view class='scroll_box' scroll-y="true" bindscrolltolower="toFooter">
+          <view class='list_wrapper'>
+              <view class='list'>
+                <view class='list_inner'>
+                  <image class='list_icon' src='/images/me_touxiang@2x.png'></image>
+                  <text class='list_name'>Vlaams-Brabant</text>
+                  <text class='list_mvp'>1231mvp</text>
+                  <view class='list_index'>1</view>             
+                </view>
+              </view>
+          </view>
+          <view class='list_wrapper'>
+              <view class='list'>
+                <view class='list_inner'>
+                  <image class='list_icon' src='/images/me_touxiang@2x.png'></image>
+                  <text class='list_name'>Vlaams-Brabant</text>
+                  <text class='list_mvp'>1231mvp</text>
+                  <view class='list_index'>1</view>             
+                </view>
+              </view>
+          </view>
+          <view class='list_wrapper'>
+              <view class='list'>
+                <view class='list_inner'>
+                  <image class='list_icon' src='/images/me_touxiang@2x.png'></image>
+                  <text class='list_name'>Vlaams-Brabant</text>
+                  <text class='list_mvp'>1231mvp</text>
+                  <view class='list_index'>1</view>             
+                </view>
+              </view>
+          </view>
+          <view class='list_wrapper'>
+              <view class='list'>
+                <view class='list_inner'>
+                  <image class='list_icon' src='/images/me_touxiang@2x.png'></image>
+                  <text class='list_name'>Vlaams-Brabant</text>
+                  <text class='list_mvp'>1231mvp</text>
+                  <view class='list_index'>1</view>             
+                </view>
+              </view>
+          </view>
+          <view class='list_wrapper'>
+              <view class='list'>
+                <view class='list_inner'>
+                  <image class='list_icon' src='/images/me_touxiang@2x.png'></image>
+                  <text class='list_name'>Vlaams-Brabant</text>
+                  <text class='list_mvp'>1231mvp</text>
+                  <view class='list_index'>1</view>             
+                </view>
+              </view>
+          </view>
+          <view class='list_wrapper'>
+              <view class='list'>
+                <view class='list_inner'>
+                  <image class='list_icon' src='/images/me_touxiang@2x.png'></image>
+                  <text class='list_name'>Vlaams-Brabant</text>
+                  <text class='list_mvp'>1231mvp</text>
+                  <view class='list_index'>1</view>             
+                </view>
+              </view>
+          </view>       
+          <view class='loading'>
+            加载中···
+          </view> 
+        </scroll-view>
+
+      </view>
+      <!--footer-->
+      <view class='footer_wrapper'>
+        <button class='scan'>
+          <image src='/images/scan.png'></image>
+          <text>扫一扫</text>
+        </button>
+        <view class='person_wrapper' bindtap='showDialog'>
+            <image src='/images/home_bg_normal_info@2x.png'></image> 
+        </view>
+      </view>
+      <!--diaolog-->
+      <view class='mask' wx:if="{{inviteDialog}}" bindtap='hideDialog'></view>
+        <view id='dialog'  wx:if="{{inviteDialog}}">
+          <image class='dia_bg' src='/images/common_home_bg@2x.png'></image>
+          <view class='dia_main'>
+            <view class='dia_header'>
+              <text class='dia_title'>欢迎加入media link</text>
+              <text class='dia_sub'>扫描广告客获得一定金额的积分奖励</text>
+            </view>
+            <view class='dia_content'>
+              <text class='invite_title_eng'>INVITATION CODE</text>
+              <text class='invite_title_cha'>请输入邀请码</text>
+              <view class='dia_input'>
+                <input type='number' maxlength="1"></input>
+                <view></view>
+                <input type='number' maxlength="1"></input>
+                <view></view>
+                <input type='number' maxlength="1"></input>
+                <view></view>
+                <input type='number' maxlength="1"></input>
+              </view>
+              <text class='tip'>输入邀请码获*****奖励</text>
+              <button class='join_btn'>进入media link</button>
+              <text class='jumb_code' bindtap='useDirect'>不填写，直接使用</text>
+            </view>          
+          </view>
+        </view>
+      </view>
+</view>

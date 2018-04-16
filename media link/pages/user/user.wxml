@@ -1,0 +1,100 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <!--header-->
+  <view class="user_header">
+    <image class='user_bg' src='/images/me_bg_def@2x.png'></image>
+    <view class='user_info'>
+      <image class='user_pic' src='/images/me_touxiang@2x.png'></image>
+      <text class='user_name'>那一只拖鞋</text>
+      <text class='signature'>个性签名</text>
+    </view>
+  </view>
+
+  <!--main-->
+  <view class='main'>
+    <!--selectList-->
+    <view class='select_list'>
+      <view class='select_item' hover-class="item_active" bindtap='toAdvert'>
+        <text class='select_text'>广告信息详情</text>
+        <image class='select_icon' src='/images/me_common_arrow@2x.png'></image>
+      </view>
+      <view class='select_item' hover-class="item_active" bindtap='toMall'>
+        <text class='select_text'>积分商城</text>
+        <image class='select_icon' src='/images/me_common_arrow@2x.png'></image>
+      </view>
+    </view>
+    <!--inviteCode-->
+    <view class='invitecode_list'>
+      <view class='select_item' hover-class="item_active" bindtap='showMyDialog'>
+        <text class='select_text'>我的邀请码</text>
+        <image class='select_icon' src='/images/me_common_arrow@2x.png'></image>
+      </view>
+      <view class='select_item' hover-class="item_active" bindtap='showDialog'>
+        <text class='select_text'>填写邀请码</text>
+        <image class='select_icon' src='/images/me_common_arrow@2x.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <!--diaolog-->
+  <view class='mask' wx:if="{{myCodeDialog}}"></view>
+  <view class='close_wrapper' wx:if="{{myCodeDialog}}"  bindtap='hideMyDialog'>
+    <image class='close_icon' src="/images/close.png"></image>
+  </view>
+  <view class='dialog' wx:if="{{myCodeDialog}}">
+    <image class='dia_bg' src='/images/common_home_bg@2x.png'></image>
+    <view class='dia_main'>
+      <view class='dia_header'>
+        <text class='dia_title'>欢迎加入media link</text>
+        <text class='dia_sub'>扫描广告客获得一定金额的积分奖励</text>
+      </view>
+      <view class='dia_content'>
+        <text class='invite_title_eng'>INVITATION CODE</text>
+        <text class='invite_title_cha'>我的邀请码</text>
+        <view class='dia_input'>
+          <input class='my_code' type='number' maxlength="1" value='F'></input>
+          <view></view>
+          <input class='my_code' type='number' maxlength="1" value='1'></input>
+          <view></view>
+          <input class='my_code' type='number' maxlength="1" value='G'></input>
+          <view></view>
+          <input class='my_code' type='number' maxlength="1" value='7'></input>
+        </view>
+        <text class='tip'>邀请好友可获得*****奖励</text>
+        <button class='join_btn'>立即邀请</button>
+        <!-- <text class='jumb_code' bindtap='useDirect'>不填写，直接使用</text> -->
+      </view>
+    </view>
+  </view>
+
+  <!--diaolog-->
+  <view class='mask'  wx:if="{{inviteDialog}}"></view>
+  <view class='close_wrapper'  wx:if="{{inviteDialog}}" bindtap='hideDialog'>
+    <image class='close_icon' src="/images/close.png"></image>
+  </view>
+  <view class='dialog' wx:if="{{inviteDialog}}">
+    <image class='dia_bg' src='/images/common_home_bg@2x.png'></image>
+    <view class='dia_main'>
+      <view class='dia_header'>
+        <text class='dia_title'>欢迎加入media link</text>
+        <text class='dia_sub'>扫描广告客获得一定金额的积分奖励</text>
+      </view>
+      <view class='dia_content'>
+        <text class='invite_title_eng'>INVITATION CODE</text>
+        <text class='invite_title_cha'>请输入邀请码</text>
+        <view class='dia_input'>
+          <input class='entry_code' type='number' maxlength="1"></input>
+          <view></view>
+          <input class='entry_code' type='number' maxlength="1"></input>
+          <view></view>
+          <input class='entry_code' type='number' maxlength="1"></input>
+          <view></view>
+          <input class='entry_code' type='number' maxlength="1"></input>
+        </view>
+        <text class='tip'>输入邀请码获*****奖励</text>
+        <button class='join_btn'>提交</button>
+        <!-- <text class='jumb_code' bindtap='useDirect'>不填写，直接使用</text> -->
+      </view>
+    </view>
+  </view>
+</view>

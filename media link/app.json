@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/advert/advert",
+    "pages/mall/mall",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#40C1CB",
+    "navigationBarTitleText": "media link",
+    "navigationBarTextStyle":"#fff"
+  }
+}

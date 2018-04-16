@@ -1,0 +1,94 @@
+<!--pages/mall/mall.wxml-->
+<view class='container'>
+  <!--header-->
+  <view class='mall_header'>
+    <image src='/images/me_sc_bg@2x.png'></image>
+    <view class='header_content'>
+      <text class='title'>积分商城</text>
+      <text class='num'>00123</text>
+      <text class='type'>mvp</text>
+    </view>
+  </view>
+
+  <!--tab-->
+  <view class='mall_tab'>
+    <view class="mall_select {{tab == 0?'tab_active':''}}" bindtap='mallSelect'>商城
+      <view class='footer_bar mall_bar' wx:if="{{tab == 0}}"></view>
+    </view>
+    <view class="detail {{tab == 1?'tab_active':''}}" bindtap='detailSelect'>明细
+      <view class='footer_bar detail_bar' wx:if="{{tab ==1}}"></view>
+    </view>
+  </view>
+
+  <!--content of mall-->
+  <scroll-view class='scroll_wrapper' scroll-y="true" upper-threshold="0" bindscrolltoupper="toUpperLoadNews"  wx:if="{{tab == 0}}">
+    <view class='mall_content'>
+      <view class='goods_list'>
+        <image src='/images/goods.jpg'></image>
+        <view class='goods_info'>
+          <text class='goods_name'>iphonex金色128G国行</text>
+          <text class='goods_mvp'>100000mvp</text>
+        </view>
+        <button bindtap='toGoods'>兑换</button>
+      </view>
+      <view class='goods_list'>
+        <image src='/images/goods.jpg'></image>
+        <view class='goods_info'>
+          <text class='goods_name'>iphonex金色128G国行</text>
+          <text class='goods_mvp'>100000mvp</text>
+        </view>
+        <button>兑换</button>
+      </view>
+      
+      <view class='goods_list'>
+        <image src='/images/goods.jpg'></image>
+        <view class='goods_info'>
+          <text class='goods_name'>iphonex金色128G国行</text>
+          <text class='goods_mvp'>100000mvp</text>
+        </view>
+        <button>兑换</button>
+      </view>
+            <view class='goods_list'>
+        <image src='/images/goods.jpg'></image>
+        <view class='goods_info'>
+          <text class='goods_name'>iphonex金色128G国行</text>
+          <text class='goods_mvp'>100000mvp</text>
+        </view>
+        <button>兑换</button>
+      </view>
+      
+
+    </view>
+  </scroll-view>
+
+
+
+
+
+
+  <!--content of detail-->
+    <scroll-view class='scroll_wrapper' scroll-y="true" upper-threshold="0"  wx:if="{{tab == 1}}">
+  <view class='detail_content'>
+    <view class='detail_list'>
+      <view class='detail_main'>
+        <text class='detail_title'>邀请好友·邀请成功</text>
+        <text class='detail_time'>2018-04-15 23:00</text>
+      </view>
+      <view class='detail_mvp'>
+        +50MVP
+      </view>
+    </view>
+
+    <view class='detail_list'>
+      <view class='detail_main'>
+        <text class='detail_title'>邀请好友·邀请成功</text>
+        <text class='detail_time'>2018-04-15 23:00</text>
+      </view>
+      <view class='detail_mvp'>
+        +50MVP
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+</view>

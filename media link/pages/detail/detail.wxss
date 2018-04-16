@@ -1,0 +1,77 @@
+/* pages/detail/detail.wxss */
+.goods_pic {
+  height: 280rpx;
+  width: 100%;
+}
+.goods_pic image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  height: 180rpx;
+  width: 180rpx;
+}
+
+.goods_info {
+  width: 92%;
+  margin: 0 auto;
+  border-radius: 8rpx;
+  box-shadow: 0 0 15rpx #d9d9d9;
+}
+.goods_info text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.goods_name {
+  padding: 25rpx 0;
+  padding-bottom: 18rpx;
+  font-size: 32rpx;
+}
+.goods_mvp {
+  font-size: 28rpx;
+  padding-bottom: 30rpx;
+}
+
+.purchaser_info {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  border-radius: 8rpx;
+  box-shadow: 0 0 15rpx #d9d9d9;
+}
+.purchaser_info view {
+  padding: 20rpx 27rpx 10rpx 27rpx;
+}
+.purchaser_info label {
+  font-size: 28rpx;
+}
+.purchaser_info text {
+  vertical-align: middle;
+  padding-left:35rpx;
+  font-size: 24rpx;
+  color: #c7c7c7;
+}
+.purchaser_info input,textarea {
+  width: 100%;
+  height: 70rpx;
+  margin-top: 15rpx;
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  padding-left: 15rpx;
+  box-shadow: inset 0 0 2px  #d9d9d9;
+}
+
+.purchaser_info textarea {
+  height: 160rpx;
+  line-height: 50rpx;
+}
+
+.purchaser_info button {
+    width: 400rpx;
+    color: #fff;
+    background-color: #40C1CB;
+    margin: 0 auto;
+    margin-top:25rpx; 
+    font-size: 27rpx;
+    margin-bottom: 30rpx;
+}

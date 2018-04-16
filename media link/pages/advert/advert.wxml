@@ -1,0 +1,48 @@
+<!--pages/advert/advert.wxml-->
+<view class='container'>
+  <view class='advert_list'>
+    <view class='advert_item'>
+      <view class='infoName_and_time'>
+        <text class='info_name'>我很贵，但我牛逼</text>
+        <text class='time'>2017-12-12</text>
+      </view>
+      <view class='mvp_add'>+20mvp</view>
+      <view class='address'>广东省广州市番禺区大学城外环西路广东工业大学</view>
+    </view>
+  </view>
+
+<view class='advert_list'>
+    <view class='advert_item'>
+      <view class='infoName_and_time'>
+        <text class='info_name'>我很贵，但我牛逼</text>
+        <text class='time'>2017-12-12</text>
+      </view>
+      <view class='mvp_add'>+20mvp</view>
+      <view class='address'>广东省广州市番禺区大学城外环西路广东工业大学</view>
+    </view>
+  </view>
+
+<view class='advert_list'>
+    <view class='advert_item'>
+      <view class='infoName_and_time'>
+        <text class='info_name'>我很贵，但我牛逼</text>
+        <text class='time'>2017-12-12</text>
+      </view>
+      <view class='mvp_add'>+20mvp</view>
+      <view class='address'>广东省广州市番禺区大学城外环西路广东工业大学</view>
+    </view>
+  </view>
+
+<view class='advert_list'>
+    <view class='advert_item'>
+      <view class='infoName_and_time'>
+        <text class='info_name'>我很贵，但我牛逼</text>
+        <text class='time'>2017-12-12</text>
+      </view>
+      <view class='mvp_add'>+20mvp</view>
+      <view class='address'>广东省广州市番禺区大学城外环西路广东工业大学</view>
+    </view>
+  </view>
+
+  
+</view>
