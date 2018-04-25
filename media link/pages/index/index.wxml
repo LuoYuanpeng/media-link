@@ -26,7 +26,8 @@
           </view>
           <view class='info_content'>
             <view class='info_content-wrapper'>
-              <text>新店开张，大酬宾，希望客户能够在本店享受到令人愉悦的服务</text>
+              <text class="{{animation == true?'info_word_one':''}}">新店开张，大酬宾，希望客户能够在本店享受到令人愉悦的服务</text>
+              <text class="{{animation == true?'info_word_two':''}}">新店开张，大酬宾，希望客户能够在本店享受到令人愉悦的服务</text>
             </view>
           </view>
         </view>

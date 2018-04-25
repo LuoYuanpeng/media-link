@@ -4,10 +4,33 @@ const app = getApp()
 
 Page({
   data: {
-    inviteDialog:false
+    inviteDialog:false,
+    animation:true
   },
 
-  onLoad: function () {},
+  onShow: function () {
+    console.log(this.data);
+    setInterval(this.jud,6000);
+  },
+
+  jud:function () {
+    console.log(this.data);
+    if (this.data.animation == true) {
+      this.setData({
+        animation:false
+      })
+      var vx = this;
+      setTimeout(function(){
+        vx.setData({
+          animation:true
+        })
+      },10)
+    } else {
+      this.setData({
+        animation:true
+      })
+    }
+  },
 
   showDialog:function() {
     this.setData({

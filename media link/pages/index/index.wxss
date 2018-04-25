@@ -93,12 +93,44 @@
   background-color: #F5F5F5;
   border-radius: 0 15rpx 0 0;
 }
+@keyframes kf-marque-animation{
+   0% { transform: translateX(0); 
+   }
+    83% { 
+        transform: translateX(-100%);
+    } 
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes kf-marque-animation_two{
+   0% {left: 669.3rpx;
+   }
+    100%{
+       left:0;
+    }
+  }
 .info_content-wrapper {
-  width: 98%;
+  width: 97%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.info_word_one {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  animation: kf-marque-animation 6s linear; 
+}
+.info_word_two {
+  display: inline-block;
+  position: absolute;
+  left: 669.3rpx;
+  animation: kf-marque-animation_two 5s linear 1s; 
 }
 .info_content text {
-  display: block;
-  overflow: hidden; 
+  display: inline-block;
+  position: absolute;
   white-space:nowrap;
   padding: 28rpx 0;
   font-size: 20rpx;
